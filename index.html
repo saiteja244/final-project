@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editkaro.in · social media & video agency</title>
+  <!-- SEO meta -->
+  <meta name="description" content="Editkaro.in – social media marketing & video editing agency. Short form, long form, gaming, ads & more.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-flex">
+      <span class="logo">🎬 Editkaro.in</span>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="container">
+      <div class="grid-2col">
+        <div>
+          <h1 style="font-size: 2.8rem; line-height: 1.2;">Edit, market,<br> <span style="background:linear-gradient(135deg,#f9d976,#f39f86);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">grow with us</span></h1>
+          <p style="font-size: 1.2rem; margin: 1.5rem 0; color: #2d3a5e;">Social media marketing & video editing agency. From shorts to documentaries – we craft visuals that convert.</p>
+          <a href="#portfolio" class="btn">See our work</a>
+        </div>
+        <div class="card" style="background: #0f172a; color: white;">
+          <h3 style="color: #f9d976;">📩 Subscribe for updates</h3>
+          <p style="margin: 0.8rem 0 1.5rem;">Get tips & case studies. We'll never spam.</p>
+          <form id="emailCollector" action="javascript:void(0);">
+            <div class="form-group">
+              <input type="email" id="collectEmail" placeholder="you@example.com" required style="border-radius:40px; padding:0.9rem 1.2rem; width:100%; border:1px solid #2a3a6e; background:#1e293b; color:white;">
+            </div>
+            <button type="submit" class="btn" style="background:#f9d976; color:#0b1120; width:100%;">Subscribe ✉️</button>
+            <div id="emailFeedback" class="submit-feedback" style="color:#b9f0b9; margin-top:0.8rem;"></div>
+          </form>
+          <p style="font-size:0.8rem; margin-top:1.2rem; color:#9aabcf;">We store emails in Google Sheets (demo integration).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="section-title">🎥 Portfolio – categories</h2>
+      <div class="category-grid" id="categoryFilter">
+        <button class="category-btn active" data-cat="all">All</button>
+        <button class="category-btn" data-cat="short">Short Form</button>
+        <button class="category-btn" data-cat="long">Long Form</button>
+        <button class="category-btn" data-cat="gaming">Gaming</button>
+        <button class="category-btn" data-cat="football">Football Edits</button>
+        <button class="category-btn" data-cat="ecommerce">eCommerce Ads</button>
+        <button class="category-btn" data-cat="documentary">Documentary</button>
+        <button class="category-btn" data-cat="color">Color Grading</button>
+        <button class="category-btn" data-cat="anime">Anime Videos</button>
+        <button class="category-btn" data-cat="ads">Ads</button>
+      </div>
+      <div id="videoContainer" class="video-grid"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">👋 About Editkaro.in</h2>
+      <div class="grid-2col">
+        <div>
+          <p style="font-size:1.2rem;"><strong>Mission:</strong> Empower brands with authentic, high-impact video content that tells their story.</p>
+          <p style="margin: 1.2rem 0;"><strong>Vision:</strong> Become the go-to creative partner for businesses who want to stand out in the crowded social space.</p>
+          <p>We’re a remote-first team of editors, strategists, and storytellers.</p>
+        </div>
+        <div>
+          <h3>🌟 Meet the team</h3>
+          <div class="team-grid" id="teamGrid">
+            <!-- injected by js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">📬 Contact us</h2>
+      <div class="grid-2col">
+        <div class="card">
+          <h3>Send a message</h3>
+          <form id="contactForm" action="javascript:void(0);">
+            <div class="form-row">
+              <div class="form-group"><label>Name</label><input type="text" id="contactName" placeholder="Your name" required></div>
+              <div class="form-group"><label>Email</label><input type="email" id="contactEmail" placeholder="you@example.com" required></div>
+            </div>
+            <div class="form-group"><label>Phone</label><input type="tel" id="contactPhone" placeholder="+91 98765 43210"></div>
+            <div class="form-group"><label>Message</label><textarea id="contactMessage" rows="3" placeholder="Tell us about your project..."></textarea></div>
+            <button type="submit" class="btn">Send ➤</button>
+            <div id="contactFeedback" class="submit-feedback"></div>
+          </form>
+        </div>
+        <div class="card" style="background:#0f172a; color:white;">
+          <h3 style="color:#f9d976;">📍 Get in touch</h3>
+          <p style="margin:1.5rem 0;">Email: hello@editkaro.in<br>Phone: +91 98765 43210<br>Social: @editkaro</p>
+          <p style="font-size:0.9rem; color:#b9c8f0;">We’ll respond within 24h.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Editkaro.in – crafted with 🎬 & ☕</p>
+      <p style="font-size:0.8rem; margin-top:0.5rem;">All form submissions are stored in Google Sheets (demo integration via Apps Script).</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
